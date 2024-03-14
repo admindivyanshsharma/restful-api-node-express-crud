@@ -9,10 +9,10 @@ node {
         stage 'Deploy'
             sh 'whoami'
             switch (env.BRANCH_NAME) {
-               # case 'dev':
+                case 'dev':
                     sh 'bash ./.deployment/dev_deploy.sh'
                     break
-               # case 'uat':
+                case 'uat':
                     sh 'bash ./.deployment/uat_deploy.sh'
                     break
                 case 'main':
