@@ -5,7 +5,7 @@ ssh -o StrictHostKeyChecking=no -tt devops@98.70.91.102  <<"EOF"
   git checkout main
   git reset --hard
   git pull origin main
-  npm install
+#  npm install
   mkdir src/config
   echo "const ENV = \"main\";
 
